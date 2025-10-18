@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, Shield, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import videoFile from "@/assets/video.mp4";
 
-// Since you are using TSX, let's define the component type for clarity.
 const Landing: React.FC = () => {
   const navigate = useNavigate();
 
@@ -12,7 +10,7 @@ const Landing: React.FC = () => {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* ... (Your existing hero content is perfect, no changes here) ... */}
+          {/* ... (Your existing hero content) ... */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
             <Brain className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium gradient-text">AI x Blockchain | QIExplorer</span>
@@ -45,9 +43,7 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-      {/* ============================================= */}
-      {/* ===== SELF-HOSTED VIDEO DEMO SECTION ======== */}
-      {/* ============================================= */}
+      
       <div id="demo" className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
             <h2 className="text-4xl font-bold">See QIExplorer in Action</h2>
@@ -58,22 +54,21 @@ const Landing: React.FC = () => {
 
         {/* Responsive video wrapper using Tailwind's aspect-video class */}
         <div className="max-w-4xl mx-auto aspect-video w-full overflow-hidden rounded-2xl shadow-2xl bg-black border border-border">
-          <video
-            className="w-full h-full object-contain"
-            controls
-            preload="metadata"
-            playsInline
-          >
-            <source src={videoFile} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            className="w-full h-full"
+            src="https://player.vimeo.com/video/1128437225?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            title="QIExplorer Product Demo"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
 
-      {/* Features Grid & Footer (Your existing code) */}
+      
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* ... your feature cards ... */}
+         
           <div className="card-gradient p-6 rounded-xl border border-border space-y-4 hover-scale"> <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center"> <Brain className="w-6 h-6 text-primary" /> </div> <h3 className="text-xl font-semibold">AI Forecasting</h3> <p className="text-muted-foreground"> Powered by IBM Granite time-series model from Hugging Face for accurate crypto predictions </p> </div>
           <div className="card-gradient p-6 rounded-xl border border-border space-y-4 hover-scale"> <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center"> <Shield className="w-6 h-6 text-primary" /> </div> <h3 className="text-xl font-semibold">Risk Analysis</h3> <p className="text-muted-foreground"> Real-time risk signals with confidence scores to make informed trading decisions </p> </div>
           <div className="card-gradient p-6 rounded-xl border border-border space-y-4 hover-scale"> <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center"> <Zap className="w-6 h-6 text-primary" /> </div> <h3 className="text-xl font-semibold">Arbitrage Detection</h3> <p className="text-muted-foreground"> Identify profit opportunities across different cryptocurrencies instantly </p> </div>
@@ -85,7 +80,7 @@ const Landing: React.FC = () => {
 
       <footer className="border-t border-border mt-20 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>Built for QIE Hackathon 2025 | Powered by React, OpenRouter, and CoinGecko</p>
+          <p>Built for Hackathon 2025 | Powered by React, OpenRouter, and CoinGecko</p>
         </div>
       </footer>
     </div>
