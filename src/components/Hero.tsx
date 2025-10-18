@@ -11,12 +11,12 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-primary/20 backdrop-blur-sm animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">AI × Blockchain | Hackathon 2025</span>
+            <span className="text-sm font-medium">AI × Blockchain | QIExplorer</span>
           </div>
 
           {/* Title */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-slide-up">
-            <span className="gradient-text">QIE</span>
+            <span className="gradient-text">QIExplorer</span>
           </h1>
           
           <p className="text-2xl md:text-3xl font-semibold text-foreground/90 max-w-3xl animate-slide-up" style={{ animationDelay: "0.1s" }}>

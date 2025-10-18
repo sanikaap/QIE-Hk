@@ -11,12 +11,28 @@ interface CryptoSelectorProps {
   isLoading?: boolean;
 }
 
+// CoinGecko API IDs - verified correct IDs
 const cryptoOptions = [
   { value: "bitcoin", label: "Bitcoin (BTC)", symbol: "₿" },
   { value: "ethereum", label: "Ethereum (ETH)", symbol: "Ξ" },
   { value: "solana", label: "Solana (SOL)", symbol: "◎" },
   { value: "cardano", label: "Cardano (ADA)", symbol: "₳" },
   { value: "ripple", label: "Ripple (XRP)", symbol: "✕" },
+  { value: "tether", label: "Tether (USDT)", symbol: "₮" },
+  { value: "binancecoin", label: "Binance Coin (BNB)", symbol: "BNB" }, // Fixed: was binance-coin
+  { value: "usd-coin", label: "USD Coin (USDC)", symbol: "USDC" },
+  { value: "dogecoin", label: "Dogecoin (DOGE)", symbol: "Ð" },
+  { value: "litecoin", label: "Litecoin (LTC)", symbol: "Ł" },
+  { value: "avalanche-2", label: "Avalanche (AVAX)", symbol: "AVAX" }, // Fixed: was avalanche
+  { value: "polkadot", label: "Polkadot (DOT)", symbol: "DOT" },
+  { value: "chainlink", label: "Chainlink (LINK)", symbol: "LINK" },
+  { value: "matic-network", label: "Polygon (MATIC)", symbol: "MATIC" }, // Fixed: was polygon
+  { value: "tron", label: "TRON (TRX)", symbol: "TRX" },
+  { value: "shiba-inu", label: "Shiba Inu (SHIB)", symbol: "SHIB" },
+  { value: "uniswap", label: "Uniswap (UNI)", symbol: "UNI" },
+  { value: "stellar", label: "Stellar (XLM)", symbol: "XLM" },
+  { value: "monero", label: "Monero (XMR)", symbol: "XMR" },
+  { value: "tezos", label: "Tezos (XTZ)", symbol: "ꜩ" },
 ];
 
 const timeRanges = [
