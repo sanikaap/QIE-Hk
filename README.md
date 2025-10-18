@@ -1,75 +1,27 @@
-# React + TypeScript + Vite
+# QIExplorer 🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> AI-Powered Crypto Foresight for a Borderless DeFi Future.
 
-Currently, two official plugins are available:
+QIExplorer is a web-based dashboard that acts as a decentralized AI agent for financial risk and arbitrage in the cryptocurrency market. Built for the Hackathon 2025, it leverages powerful AI models via the OpenRouter API to provide users with predictive insights, risk analysis, and arbitrage opportunities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+*   🧠 **AI Forecasting:** Utilizes powerful time-series models accessed through the **OpenRouter API** for accurate crypto predictions.
+*   🛡️ **Risk Analysis:** Delivers real-time risk signals with confidence scores, helping users make informed trading decisions.
+*   ⚡ **Arbitrage Detection:** Instantly identifies potential profit opportunities by comparing prices across different cryptocurrencies.
+*   🎥 **Embedded Product Demo:** Features a seamlessly integrated product demo video hosted on Vimeo for optimal performance.
+*   🎨 **Modern & Responsive UI:** Built with React, TypeScript, and `shadcn/ui` for a clean, fast, and accessible user experience on any device.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **Frontend:** React, TypeScript, Vite, React Router
+*   **Styling:** Tailwind CSS, `shadcn/ui`
+*   **AI/Data Services:** **OpenRouter API**, CoinGecko API
+*   **Data Visualization:** Recharts
+*   **Icons:** Lucide React
+*   **Video Hosting:** Vimeo
+*   **Deployment:** Appwrite Sites
